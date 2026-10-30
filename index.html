@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Post Pincode Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>India Post Pincode Checker</h1>
+        <p class="description">
+            Enter a six-digit Indian pincode to find post offices,
+            district, and state.
+        </p>
+
+        <form id="pincodeForm">
+            <label for="pincodeInput">Enter Pincode</label>
+
+            <input
+                type="text"
+                id="pincodeInput"
+                name="pincode"
+                placeholder="e.g. 600001"
+                inputmode="numeric"
+                maxlength="6"
+                autocomplete="postal-code"
+                required
+            >
+
+            <button type="submit" id="checkButton">
+                Check Pincode
+            </button>
+        </form>
+
+        <p id="statusMessage" role="status" aria-live="polite"></p>
+
+        <section id="resultsSection" hidden>
+            <h2>Post Office Details</h2>
+
+            <label for="filterInput">Filter by post office name</label>
+            <input
+                type="search"
+                id="filterInput"
+                placeholder="Search post office..."
+            >
+
+            <p id="resultCount"></p>
+            <div id="results"></div>
+        </section>
+    </main>
+</body>
+</html>

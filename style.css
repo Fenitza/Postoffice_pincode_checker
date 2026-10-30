@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background: #f3f6fa;
+    color: #1f2937;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    color: #174ea6;
+    font-size: 28px;
+}
+
+h2 {
+    margin-top: 24px;
+    font-size: 21px;
+}
+
+.description {
+    color: #5b6472;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #174ea6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background: #123d82;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#statusMessage {
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+#statusMessage.error {
+    color: #b91c1c;
+}
+
+#statusMessage.success {
+    color: #166534;
+}
+
+#statusMessage.loading {
+    color: #174ea6;
+}
+
+#results {
+    display: grid;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.post-office-card {
+    padding: 16px;
+    border: 1px solid #dbe3ef;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.post-office-card h3 {
+    margin: 0 0 10px;
+    color: #174ea6;
+    font-size: 18px;
+}
+
+.post-office-card p {
+    margin: 6px 0;
+    overflow-wrap: anywhere;
+}
+
+#resultCount {
+    color: #5b6472;
+    font-size: 14px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
